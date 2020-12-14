@@ -9,7 +9,6 @@ const rc = new RingCentral({
 (async () => {
   await rc.authorize({
     username: process.env.RINGCENTRAL_USERNAME!,
-    extension: process.env.RINGCENTRAL_EXTENSION,
     password: process.env.RINGCENTRAL_PASSWORD!,
   });
   console.log(rc.token!.access_token);
